@@ -1,0 +1,31 @@
+
+### Get Students
+GET http://localhost:8000/students
+
+### Post New Student
+POST http://localhost:8000/students
+
+{
+  "course": "Experiments, Science, and Fashion in Nanophotonics",
+  "email": "jdoe@example.com",
+  "gpa": 3,
+  "name": "Jane Doe"
+}
+
+### Get One Student
+### Note that you have to pick an existing ObjectId (_id) for the subsequent requests
+GET http://localhost:8000/students/65ee1bbf30a6494f980e3c23
+
+### Update  New Student
+PUT http://localhost:8000/students/65ee1bbf30a6494f980e3c23
+
+{
+  "name": "Jane Donald"
+}
+
+
+### Get One Student
+GET http://localhost:8000/students/65ee1bbf30a6494f980e3c23
+
+### Delete One Student
+DELETE http://localhost:8000/students/65ee1bbf30a6494f980e3c23
